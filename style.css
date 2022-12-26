@@ -6,7 +6,8 @@
     font-family: 'Roboto Slab', serif;
 }
 body{
-    background-image: url(./images/sonybg3.jpg);
+    /* background-image: url(./images/sonybg3.jpg); */
+    background-color: rgb(8, 21, 49);
     background-size:cover;
     background-attachment: fixed;
 }
@@ -19,6 +20,7 @@ body{
     width: 100px;
     height: 100vh;
     display: flex;
+    border-radius: 0 20px 20px 0;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
@@ -69,7 +71,7 @@ body{
     align-items: center;   
 }
 .navbar > input{
-    padding: 12px 60px;
+    padding: 12px 80px;
     height: 50px;
     margin-left: 14px;
     border-radius: 10px;
@@ -151,6 +153,26 @@ input::placeholder{
     background-color: rgba(211, 32, 32, 0.76);
     color: white;
 }
+.maincard2{
+    width: 95%;
+    height: 300px;
+    background-image: url(./images/game6.jpg);
+    background-size:cover;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 254, 254, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.maincard2 > h1{
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 90px;
+}
 .gamecards{
     display: flex;
     width: 95%;
@@ -158,10 +180,12 @@ input::placeholder{
     justify-content: space-around;
     margin: 10px auto;
     color: white;
+    cursor: pointer;
 }
 .gamecardtitle{
     padding: 10px 20px;
-    font-size: 26px;
+    margin-top: 10px;
+    font-size: 20px;
     color: white;
 }
 .gamecard{
@@ -170,18 +194,26 @@ input::placeholder{
     border-radius: 10px;
     background-color: blanchedalmond;
     color: white;
+    transition: all .2s;
     
 }
 .gmc1{
     background-image: url(./images/game1.jpeg);
     background-size: cover;
 }
+.gmc1:hover{
+    transform: scale(1.03);
+}
+.gmc2:hover{
+    transform: scale(1.03);
+}
+
 .gmc2{
     background-image: url(./images/game2.jpg);
     background-size: cover;
 }
 .gamedetailes{
-    margin-top: 100px;
+    margin-top: 70px;
     padding: 10px 20px;
 }
 .heroright{
